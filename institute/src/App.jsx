@@ -7,7 +7,8 @@ import About from './components/About'
 import Courses from './components/Courses'
 import Placements from './components/Placements'
 import Contact from './components/Contact'
-// import Footer from './components/Footer'
+import CourseDetail from './components/CourseDetail'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -18,9 +19,10 @@ export default function App() {
         <Route path='/about' element={<About/>} />
         <Route path='/courses' element={<Courses/>} />
         <Route path='/placements' element={<Placements/>} />
+        <Route path='/courses/:id' element={<CourseDetail />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }
