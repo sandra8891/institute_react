@@ -105,3 +105,22 @@ h1 {
     margin-top: 30px;
   }
 }
+
+
+
+
+
+
+
+<Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/courses' element={<Courses/>} />
+        <Route path='/placements' element={<Placements/>} />
+        <Route path='/courses/:id' element={<CourseDetail />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+}

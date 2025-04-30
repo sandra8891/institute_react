@@ -16,7 +16,7 @@ export default function Courses() {
 
   return (
     <div className="courses-container">
-      <Navbar />
+      {/* <Navbar /> */}
       <h2 className="title">Courses</h2>
       <div className="grid-container">
         {courses.map((course) => (

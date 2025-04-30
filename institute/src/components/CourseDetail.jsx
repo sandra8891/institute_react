@@ -15,7 +15,7 @@ export default function CourseDetail() {
 
   return (
     <div>
-      <Navbar /><br />
+      {/* <Navbar /><br /> */}
       <h2 className="title">Courses</h2>
       {course && (
           <div className="course-detail">

@@ -1,38 +1,42 @@
 import React from "react";
-import Navbar from './Navbar';
-// import './ins.css';
+import "./ins.css";
 
-export default function Home() {
+export default function AboutUs() {
   return (
-    <div>
-      <Navbar />
-      <section className="aboutUs">
-        <h1 className="title">Welcome to Our Institute</h1>
-        <p className="approach">
-          Empowering students with skills and knowledge for a better future.
-        </p>
+    <section className="about-section">
+      <h1 className="about-title">ABOUT US</h1>
+      <p className="about-intro">
+        Discover who we are, what we do, and how we are committed to driving innovation,
+        excellence, and success in everything we do.
+      </p>
 
-        <div className="content">
-          <img
-            src="" 
-            alt="Our Institute"
-            className="image"
-          />
+      <div className="about-content">
+        <img
+          src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg"
+          alt="Team working"
+          className="about-image"
+        />
 
-          <div className="textBlock">
-            <h2 className="subtitle">Our Mission</h2>
-            <p className="description">
-              We aim to provide world-class education and build a strong foundation
-              for students to succeed in their careers. Our programs are designed
-              to encourage creativity, critical thinking, and practical skills.
-            </p>
-            <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime asperiores ut cumque dolorum voluptas ex porro harum fugit? Impedit rerum repudiandae voluptates quas quod non, molestiae cum nulla facere ullam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptas, vitae maiores veritatis asperiores accusantium. Officiis, placeat? Hic incidunt velit natus accusamus et nobis vero amet in, placeat voluptatum obcaecati.</p>
-            <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, omnis quasi repellat quaerat mollitia, vel dolor atque inventore qui recusandae debitis expedita vitae cum laborum asperiores architecto sint nobis ea!</p>
-          </div>
+        <div className="about-text">
+          <h2 className="about-subtitle">Who we are</h2>
+          <p>
+            Since our establishment in 2015, we have established ourselves as industry leaders by
+            upholding high ethical standards, delivering top-notch training, and achieving impressive
+            placement records.
+          </p>
+          <p>
+            Our team of trainers boasts extensive real-world experience, ensuring that you receive
+            in-depth knowledge and instruction in the latest technologies.
+          </p>
+          <p>
+            We believe that quality training combined with hands-on experience is key for students
+            to become certified professionals. We are here to guide you to excellence.
+          </p>
         </div>
-      </section>
-    </div>
+      </div>
+      
+      
+    </section>
+    
   );
 }

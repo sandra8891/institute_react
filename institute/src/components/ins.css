@@ -124,29 +124,211 @@ p {
 
 /* Footer CSS */
 
-body {
+/* Full layout wrapper to push footer */
+.page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-  margin: 0;         
+  min-height: 100vh;
 }
 
+.main-content {
+  flex: 1;
+}
+
+/* Body should not interfere */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer styling */
 footer {
   background-color: #333;
   color: white;
-  padding: 80px; 
+  padding: 80px;
   text-align: center;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .footer-content p {
   margin: 5px 0;
 }
 
-
 @media (max-width: 768px) {
   footer {
-    padding: 15px; 
+    padding: 15px;
+  }
+}
+
+
+
+
+.about-section {
+  padding: 60px 20px;
+  background-color: black;
+  color:white;
+  font-family: Arial, sans-serif;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.about-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  color:white;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.about-image {
+  width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-subtitle {
+  font-size: 2rem;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%;
+  }
+}
+.about-light {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Metrics */
+.metrics-light {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.metric-card-light {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.metric-card-light:hover {
+  transform: translateY(-5px);
+}
+
+.metric-card-light h3 {
+  font-size: 1.8rem;
+  margin: 10px 0 4px;
+}
+
+.metric-card-light p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.icon {
+  margin-bottom: 10px;
+}
+.icon.green {
+  color: #28a745;
+}
+.icon.orange {
+  color: #fd7e14;
+}
+.icon.blue {
+  color: #007bff;
+}
+.icon.purple {
+  color: #6f42c1;
+}
+
+/* About section */
+.about-content-light {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.text-light {
+  max-width: 600px;
+}
+
+.text-light h2 {
+  font-size: 2.2rem;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.text-light p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.text-light span {
+  color: #0066cc;
+  font-weight: 500;
+}
+
+.image-light img {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .about-content-light {
+    flex-direction: column;
+  }
+
+  .image-light img {
+    width: 100%;
   }
 }
 
@@ -154,52 +336,148 @@ footer {
 
 
 
-.aboutUs {
-  padding: 2rem;
-  background-color: #f9f9f9;
-  font-family: "Arial", sans-serif;
+.placements-section {
+  background: radial-gradient(#0c011f, #000);
+  color: #fff;
   text-align: center;
+  padding: 60px 200px;
+  font-family: Arial, sans-serif;
 }
 
-.title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.placements-title {
+  font-size: 4rem;
+  color: #f39c12;
+  font-weight: bold;
 }
 
-.approach {
+.placements-subtitle {
+  max-width: 800px;
+  margin: 20px auto 50px;
   font-size: 1.2rem;
-  margin-bottom: 2rem;
-  font-weight: 500;
+  color: #ccc;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+.placement-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
 }
 
-.image {
-  max-width: 400px;
+.placement-card {
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.placement-card:hover {
+  transform: translateY(-5px);
+}
+
+.placement-image {
   width: 100%;
-  height: auto;
-  margin: 1rem;
-  border-radius: 8px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.textBlock {
-  max-width: 600px;
-  text-align: left;
-  margin: 1rem;
+.placement-text h3 {
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
 }
 
-.subtitle {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.description {
+.placement-name {
+  font-weight: bold;
   font-size: 1rem;
-  line-height: 1.6;
+}
+
+.placement-role {
+  font-size: 0.9rem;
+  color: #f39c12;
+}
+
+/* Color backgrounds to match design */
+.orange-bg {
+  background: linear-gradient(to right, #ff7e00, #fff);
+  color: black;
+}
+
+.white-bg {
+  background: #fff;
+  color: black;
+}
+
+.cream-bg {
+  background: #fff4e6;
+  color: black;
+}
+
+.pink-bg {
+  background: linear-gradient(to right, #ff66b2, #fff);
+  color: black;
+}
+
+
+
+
+/* home */
+.hero-section {
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+  text-align: center;
+  padding: 120px 20px;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ff8c00; /* Bright orange */
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.hero-subtitle .highlight {
+  color: #ff8c00;
+  font-weight: 600;
+}
+
+.hero-description {
+  font-size: 1.1rem;
   color: #555;
+  max-width: 800px;
+  margin: 40px auto;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.hero-button {
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #e67600;
 }
